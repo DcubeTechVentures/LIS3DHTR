@@ -8,7 +8,7 @@ This Device is available from ControlEverything.com [SKU: LIS3DHTR_I2CS]
 
 https://www.controleverything.com/content/Accelorometer?sku=LIS3DHTR_I2CS
 
-This Sample code can be used with Raspberry pi, Arduino and Particle.
+This Sample code can be used with Raspberry pi, Arduino, Particle and Beaglebone Black.
 
 ## Java
 Download and install pi4j library on Raspberry pi. Steps to install pi4j are provided at:
@@ -62,4 +62,17 @@ Verify and flash the code on your Photon. Code output is shown in logs at dashbo
 
 https://dashboard.particle.io/user/logs
 
+
+## C
+
+Download (or git pull) the code in Beaglebone Black.
+
+Compile the c program.
+```cpp
+$>gcc LIS3DHTR.c -o LIS3DHTR
+```
+Run the c program.
+```cpp
+$>./LIS3DHTR
+```
 #####The code output is raw value of acceleration in X, Y and Z Axis.
