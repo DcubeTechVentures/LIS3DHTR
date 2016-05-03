@@ -58,7 +58,7 @@ void main()
 	// Read yAccl msb data from register(0x2A)
 	reg[0] = 0x2A;
 	write(file, reg, 1);
-	read(file, data, 2);
+	read(file, data, 1);
 	char data_2 = data[0];
 
 	// Read yAccl lsb data from register(0x2B)
@@ -70,7 +70,7 @@ void main()
 	// Read zAccl msb data from register(0x2C)
 	reg[0] = 0x2C;
 	write(file, reg, 1);
-	read(file, data, 2);
+	read(file, data, 1);
 	char data_4 = data[0];
 
 	// Read zAccl lsb data from register(0x2D)
