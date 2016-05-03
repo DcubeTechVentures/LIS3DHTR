@@ -37,7 +37,8 @@ void main()
 	sleep(1);
 
 	// Read 6 bytes of data
-	// Read xAccl lsb data from register(0x28)
+	// lsb first
+	// Read xAccl msb data from register(0x28)
 	char reg[1] = {0x28};
 	write(file, reg, 1);
 	char data[1] = {0};
@@ -48,31 +49,31 @@ void main()
 	}
 	char data_0 = data[0];
 
-	// Read xAccl msb data from register(0x29)
+	// Read xAccl lsb data from register(0x29)
 	reg[0] = 0x29;
 	write(file, reg, 1);
 	read(file, data, 1);
 	char data_1 = data[0];
 
-	// Read yAccl lsb data from register(0x2A)
+	// Read yAccl msb data from register(0x2A)
 	reg[0] = 0x2A;
 	write(file, reg, 1);
 	read(file, data, 2);
 	char data_2 = data[0];
 
-	// Read yAccl msb data from register(0x2B)
+	// Read yAccl lsb data from register(0x2B)
 	reg[0] = 0x2B;
 	write(file, reg, 1);
 	read(file, data, 1);
 	char data_3 = data[0];
 
-	// Read zAccl lsb data from register(0x2C)
+	// Read zAccl msb data from register(0x2C)
 	reg[0] = 0x2C;
 	write(file, reg, 1);
 	read(file, data, 2);
 	char data_4 = data[0];
 
-	// Read zAccl msb data from register(0x2D)
+	// Read zAccl lsb data from register(0x2D)
 	reg[0] = 0x2D;
 	write(file, reg, 1);
 	read(file, data, 1);
