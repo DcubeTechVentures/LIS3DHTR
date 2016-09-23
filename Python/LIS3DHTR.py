@@ -1,8 +1,8 @@
 # Distributed with a free-will license.
 # Use it any way you want, profit or free, provided it fits in the licenses of its associated works.
 # LIS3DHTR
-# This code is designed to work with the LIS3DHTR_I2CS I2C Mini Module available from ControlEverything.com.
-# https://www.controleverything.com/content/Accelorometer?sku=LIS3DHTR_I2CS#tabs-0-product_tabset-2
+# This code is designed to work with the LIS3DHTR_I2CS I2C Mini Module available from dcubestore.com
+# http://dcubestore.com/product/lis3dhtr-3-axis-accelerometer-digital-output-motion-sensor-i%C2%B2c-mini-module/
 
 import smbus
 import time
